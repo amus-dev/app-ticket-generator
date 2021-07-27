@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
+@mixin font-raleway-bold {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+@mixin font-raleway-normal {
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+@mixin font-raleway-light {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}

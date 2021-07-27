@@ -1,0 +1,18 @@
+@import "../../assets/sass/style.scss";
+.formBoleta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  &__input {
+    @include font-raleway-light;
+    max-width: 500px;
+    font-size: 1rem;
+  }
+
+  &__btn {
+    @include font-raleway-light;
+    margin-top: 1rem;
+  }
+}

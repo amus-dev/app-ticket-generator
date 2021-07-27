@@ -1,0 +1,19 @@
+@import "../../../assets/sass/style.scss";
+.boleteo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__title {
+    @include font-raleway-bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__description {
+    @include font-raleway-normal;
+    font-size: 1rem;
+    max-width: 600px;
+    text-align: center;
+  }
+}
