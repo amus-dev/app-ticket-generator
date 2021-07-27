@@ -1,1 +1,6 @@
+@import "./modules/colors";
 @import "./modules/font";
+
+body {
+  background-color: $beige;
+}

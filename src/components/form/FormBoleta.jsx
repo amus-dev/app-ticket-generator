@@ -6,12 +6,13 @@ import { BoletaContext } from "../../context/BoletaContext";
 import "./form.style.scss";
 
 const FormBoleta = () => {
-  const { setMontoLiquido } = useContext(BoletaContext);
+  const { setMontoLiquido, setVisibleResult } = useContext(BoletaContext);
   const [monto, setMonto] = useState(0);
   const handleCalculate = (e) => {
     e.preventDefault();
 
     setLiquido();
+    setVisibleResult(true);
   };
 
   const setLiquido = () => {

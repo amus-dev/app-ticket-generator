@@ -14,5 +14,18 @@
   &__btn {
     @include font-raleway-light;
     margin-top: 1rem;
+    background-color: $wedding;
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+    &:focus,
+    &:active {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      background-color: $wedding;
+    }
+    &:hover {
+      background-color: $vintage;
+    }
   }
 }

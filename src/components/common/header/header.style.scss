@@ -9,11 +9,18 @@
     @include font-raleway-bold;
     font-size: 2rem;
     text-transform: uppercase;
+    color: $vintage;
   }
   &__description {
     @include font-raleway-normal;
     font-size: 1rem;
     max-width: 600px;
     text-align: center;
+    color: $wedding;
+  }
+  &__alert {
+    @include font-raleway-normal;
+    background-color: $vintage;
+    color: $beige;
   }
 }

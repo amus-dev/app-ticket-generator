@@ -13,10 +13,19 @@ export const BoletaProvider = ({ children }) => {
     pago: 0,
     retension: 0,
   });
+
+  const [visibleResult, setVisibleResult] = useState();
   return (
     <div>
       <BoletaContext.Provider
-        value={{ MontoLiquido, setMontoLiquido, MontoBruto, setMontoBruto }}
+        value={{
+          MontoLiquido,
+          setMontoLiquido,
+          MontoBruto,
+          setMontoBruto,
+          visibleResult,
+          setVisibleResult,
+        }}
       >
         {children}
       </BoletaContext.Provider>
