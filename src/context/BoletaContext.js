@@ -8,7 +8,7 @@ export const BoletaProvider = ({ children }) => {
     retension: 0,
   });
 
-  const [MontoBruto, setMontoBruto] = useState({
+  const [MontoLiquidoOld, setMontoLiquidoOld] = useState({
     boleta: 0,
     pago: 0,
     retension: 0,
@@ -21,8 +21,8 @@ export const BoletaProvider = ({ children }) => {
         value={{
           MontoLiquido,
           setMontoLiquido,
-          MontoBruto,
-          setMontoBruto,
+          MontoLiquidoOld,
+          setMontoLiquidoOld,
           visibleResult,
           setVisibleResult,
         }}

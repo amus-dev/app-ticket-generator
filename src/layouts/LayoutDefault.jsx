@@ -8,13 +8,14 @@ import CardPrice from "../components/CardPrice";
 import { BoletaContext } from "../context/BoletaContext";
 
 const LayoutDefault = () => {
-  const { MontoLiquido } = useContext(BoletaContext);
+  const { MontoLiquido, MontoLiquidoOld } = useContext(BoletaContext);
   return (
     <Container>
       <Header />
       <FormBoleta />
       <Row>
-        <CardPrice title="Valor Liquído" monto={MontoLiquido} />
+        <CardPrice title="Valor Liquído 11.50%" monto={MontoLiquido} />
+        <CardPrice title="Valor Liquído 10%" monto={MontoLiquidoOld} />
       </Row>
     </Container>
   );
