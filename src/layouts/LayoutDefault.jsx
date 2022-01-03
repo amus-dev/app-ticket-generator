@@ -15,7 +15,7 @@ const LayoutDefault = () => {
       <FormBoleta />
       <Row>
         <CardPrice title="Valor Liquído 12.25%" monto={MontoLiquido} />
-        <CardPrice title="Valor Liquído 11.5%" monto={MontoLiquidoOld} />
+        <CardPrice title="Valor Liquído 10%" monto={MontoLiquidoOld} />
       </Row>
     </Container>
   );
