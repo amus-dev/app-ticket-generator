@@ -1,2 +1,2 @@
-export const RETENSION_NOW = 11.5;
-export const RETENSION_OLD = 10;
+export const RETENSION_NOW = 12.25;
+export const RETENSION_OLD = 11.5;
