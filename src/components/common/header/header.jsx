@@ -11,7 +11,7 @@ const header = () => {
         aumenta gradualmente la retención de impuestos.
       </p>
       <Alert variant="warning" className="boleteo__alert">
-        Tasa Retención Año 2021: 11.50%
+        Tasa Retención Año 2022: 12.25%
       </Alert>
     </section>
   );
