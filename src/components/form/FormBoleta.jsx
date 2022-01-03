@@ -1,9 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { useState, useContext } from "react";
-import {
-  CALCULAR_BOLETA_LIQUIDA_TODAY,
-  CALCULAR_BOLETA_LIQUIDA_OLD,
-} from "../../utils/functions";
+import { CALCULAR_BOLETA } from "../../utils/functions";
+import { RETENSION_NOW, RETENSION_OLD } from "../../utils/const";
 import { BoletaContext } from "../../context/BoletaContext";
 
 import "./form.style.scss";
@@ -21,7 +19,7 @@ const FormBoleta = () => {
   };
 
   const setLiquido = () => {
-    const boleta = CALCULAR_BOLETA_LIQUIDA_TODAY(monto);
+    const boleta = CALCULAR_BOLETA(monto, RETENSION_NOW);
     setMontoLiquido({
       boleta,
       pago: parseInt(monto),
@@ -30,7 +28,7 @@ const FormBoleta = () => {
   };
 
   const setLiquidoOld = () => {
-    const boleta = CALCULAR_BOLETA_LIQUIDA_OLD(monto);
+    const boleta = CALCULAR_BOLETA(monto, RETENSION_OLD);
     setMontoLiquidoOld({
       boleta,
       pago: parseInt(monto),
@@ -39,24 +37,22 @@ const FormBoleta = () => {
   };
 
   return (
-    <>
-      <Form className="formBoleta" onSubmit={(e) => handleCalculate(e)}>
-        <Form.Control
-          type="number"
-          placeholder="Precio"
-          onChange={(e) => setMonto(e.target.value)}
-          className="formBoleta__input"
-        />
-        <Button
-          variant="primary"
-          color="primary"
-          onClick={(e) => handleCalculate(e)}
-          className="formBoleta__btn"
-        >
-          Calcular
-        </Button>
-      </Form>
-    </>
+    <Form className="formBoleta" onSubmit={(e) => handleCalculate(e)}>
+      <Form.Control
+        type="number"
+        placeholder="Precio"
+        onChange={(e) => setMonto(e.target.value)}
+        className="formBoleta__input"
+      />
+      <Button
+        variant="primary"
+        color="primary"
+        onClick={(e) => handleCalculate(e)}
+        className="formBoleta__btn"
+      >
+        Calcular
+      </Button>
+    </Form>
   );
 };
 
